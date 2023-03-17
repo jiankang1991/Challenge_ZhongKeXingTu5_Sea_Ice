@@ -31,6 +31,6 @@ We randomly split the provided images into the training and test sets with a rat
 
 ## Model
 
-The time during the finals is an important evaluation index. Unet architecture is adopted in the whole experiment. In order to reduce the number of parameters and speed up, the number of coding and decoding blocks is set to four. We use [timm-efficientnet-lite3]([[1905.11946v5\] EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (arxiv.org)](https://arxiv.org/abs/1905.11946v5)) as our backbone feature extraction. Compared with the same series of timm-efficientnet-lite4, the speed is faster. Although the accuracy has decreased, the difference is not significant.
+The time during the finals is an important evaluation index. Unet architecture is adopted in the whole experiment. In order to reduce the number of parameters and speed up, the number of coding and decoding blocks is set to four. We use [timm-efficientnet-lite3](https://arxiv.org/pdf/1905.11946v5.pdf)as our backbone feature extraction. Compared with the same series of timm-efficientnet-lite4, the speed is faster. Although the accuracy has decreased, the difference is not significant.
 
 ## Test
