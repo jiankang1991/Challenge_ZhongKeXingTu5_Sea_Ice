@@ -43,6 +43,6 @@ In order to achieve the purpose of improving the reasoning speed without signifi
 
 3、Simplify weights saved during training and reduce time to read weights
 
-4、Using [dali ](https://developer.nvidia.com/zh-cn/dali)to Speed Up Picture Reading
+4、Using [dali ](https://developer.nvidia.com/zh-cn/dali)to speed up Picture Reading
 
 5、Torch.cuda.amp is used to automatically mix the precision in reasoning, which saves memory and speeds up reasoning.
