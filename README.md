@@ -35,7 +35,7 @@ For the binary segmentation task, commonly exploited losses in the literature ar
 
 The time during the finals is an important evaluation index. A segmentation network with a U-shape structure is proposed which can simultaneously speed up the inference and preserve the detailed spatial information of sea ices. Differently with other methods, the 5th encoding blocks of the pretrained networks are omitted here, with the consideration of the balance between the computational cost and segmentation performance. 
 
-In order to improve the efficiency, we adopt the residual learning scheme including depthwise and pointwise convolutions. In addition, the concurrent spatial and channel squeeze and excitation (SCSE) block is integrated to refine the features both along the spatial and channel dimensions. 
+In order to improve the efficiency, we adopt the residual learning scheme including depthwise and pointwise convolutions. In addition, the concurrent spatial and channel squeeze and excitation ([SCSE](https://arxiv.org/abs/1803.02579)) block is integrated to refine the features both along the spatial and channel dimensions. 
 
 We use [timm-efficientnet-lite3](https://arxiv.org/pdf/1905.11946v5.pdf) as our backbone feature extraction. Compared with the same series of timm-efficientnet-lite4, the speed is faster. Although the accuracy has decreased, the difference is not significant.
 
@@ -49,7 +49,7 @@ In order to achieve the purpose of improving the reasoning speed without signifi
 
 3、Simplify weights saved during training and reduce time to read weights
 
-4、Using [dali ](https://developer.nvidia.com/zh-cn/dali)to speed up Picture Reading
+4、Using [dali ](https://developer.nvidia.com/zh-cn/dali)to speed up picture reading
 
 5、Torch.cuda.amp is used to automatically mix the precision in reasoning, which saves memory and speeds up reasoning.
 
