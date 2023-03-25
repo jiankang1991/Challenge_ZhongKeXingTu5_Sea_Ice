@@ -57,7 +57,8 @@ Pay attention not to use semi-precision training during training, which will aff
 
 - ### Model
 
-<img src="./data/model.png" width = "300" height = "300" alt="data" align=center />
+<img src="./data/model.png" width = "300" height = "300" alt="model" align=left />
+
 The time during the finals is an important evaluation index. A segmentation network with a U-shape structure is proposed which can simultaneously speed up the inference and preserve the detailed spatial information of sea ices. Differently with other methods, the 5th encoding blocks of the pretrained networks are omitted here, with the consideration of the balance between the computational cost and segmentation performance. 
 
 In order to improve the efficiency, we adopt the residual learning scheme including depthwise and pointwise convolutions. In addition, the concurrent spatial and channel squeeze and excitation ([SCSE](https://arxiv.org/abs/1803.02579)) block is integrated to refine the features both along the spatial and channel dimensions. 
