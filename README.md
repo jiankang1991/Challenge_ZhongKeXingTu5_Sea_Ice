@@ -57,7 +57,7 @@ Pay attention not to use semi-precision training during training, which will aff
 
 - ### Model
 
-<img src="./data/model.png" width = "300" height = "300" alt="model" align=center />
+<p><img src="./data/model.png" width = "300" height = "300" align="middle" /></p>
 
 The time during the finals is an important evaluation index. A segmentation network with a U-shape structure is proposed which can simultaneously speed up the inference and preserve the detailed spatial information of sea ices. Differently with other methods, the 5th encoding blocks of the pretrained networks are omitted here, with the consideration of the balance between the computational cost and segmentation performance. 
 
