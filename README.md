@@ -52,6 +52,8 @@ We randomly split the provided images into the training and test sets with a rat
 
 For the binary segmentation task, commonly exploited losses in the literature are BCE, Dice, or their combinations. Compared to the pixel-based loss, i.e., BCE, Dice loss is more emphasized on learning precise region predictions. Most of the images in the training ground scene do not contain sea ice, causing the problem of gradients disappearing when dice are lost to the training network. We replace the last layer activated by the sigmoid function with the one activated by the softmax function and adopt the classwise Dice loss rather than the normal Dice loss for binary segmentation.
 
+Pay attention not to use semi-precision training during training, which will affect the gradient propagation.
+
 ### Model
 <img src="./data/model.png" width = "300" height = "300" alt="data" align=center />
 The time during the finals is an important evaluation index. A segmentation network with a U-shape structure is proposed which can simultaneously speed up the inference and preserve the detailed spatial information of sea ices. Differently with other methods, the 5th encoding blocks of the pretrained networks are omitted here, with the consideration of the balance between the computational cost and segmentation performance. 
