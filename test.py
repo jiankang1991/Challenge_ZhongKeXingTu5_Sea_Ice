@@ -68,8 +68,10 @@ class TestImages:
 
 def main():
     
+    if not os.path.isdir(SAVE_DIR):
+        os.mkdir(SAVE_DIR)
+        
     model = UnetAux_v2(encoder_name = 'timm-tf_efficientnet_lite3', encoder_weights=None, in_channels=3, classes=2, encoder_depth=4, decoder_attention_type='scse', decoder_channels=(128,64,32,16)).cuda()
-    
     
     model.load_state_dict(torch.load(CHECKPOINT))
     model.eval()
