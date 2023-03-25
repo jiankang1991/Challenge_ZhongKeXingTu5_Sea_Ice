@@ -3,9 +3,6 @@
 This repository contains our code in the  Gaofen Challenge. The task of this challenge is to extract sea ice targets from a large range of sea areas in a fine pixel-by-pixel manner.
 
 ## Dataset
-<!-- <img src="./data/image.tif" width = "250" height = "250" alt="image" align=center />
-<img src="./data/gt.png" width = "250" height = "250" alt="GT" align=center /> -->
-
 Ocean 1 optical data with a resolution of 50m. The scene covers the surrounding areas of the Bohai Sea in China. The image size varies from 512 to 2048 pixels. Remote sensing images are in tif format and contain R-G-B channels; The labeling file is in single-channel png format with sea ice pixel values of 255 and background pixel values of 0.
 
 We cut images larger than 512 pixels into several 512-pixel images, and store the cut data set in csv.
@@ -25,7 +22,21 @@ trainData
 |   ......
 ```
 
+## Docker
 
+Place the files in the same folder as the Dockerfile, and create a mirror from the Dockerfile.
+
+```
+docker build -t zkxt21/zkxt:版本号 .
+```
+
+See if the container works properly.
+
+```
+docker run --gpus all -v ./data/:/input_path --shm-size=2g -it zkxt21/zkxt:版本号 bash
+```
+
+运行命令python test.py
 
 ## Train
 
@@ -67,4 +78,3 @@ In order to achieve the purpose of improving the reasoning speed without signifi
   pages={4521-4530}
 }
 ```
-
