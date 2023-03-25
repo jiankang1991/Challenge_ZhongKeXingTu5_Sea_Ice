@@ -3,8 +3,8 @@
 This repository contains our code in the  Gaofen Challenge. The task of this challenge is to extract sea ice targets from a large range of sea areas in a fine pixel-by-pixel manner.
 
 ## Dataset
-<div align=center><img src="./data/gt.png" width = "300" height = "300" ><img/></div>
-<div align=center><img src="./data/image.tif" width = "300" height = "300" ><img/></div>
+<div align=left><img src="./data/gt.png" width = "300" height = "300" ><img/></div>
+<div align=right><img src="./data/image.tif" width = "300" height = "300" ><img/></div>
 
 Ocean 1 optical data with a resolution of 50m. The scene covers the surrounding areas of the Bohai Sea in China. The image size varies from 512 to 2048 pixels. Remote sensing images are in tif format and contain R-G-B channels; The labeling file is in single-channel png format with sea ice pixel values of 255 and background pixel values of 0.
 
