@@ -20,4 +20,4 @@ RUN pip install -r requirements.txt
 COPY . /workspace
 RUN python -m pip install --extra-index-url https://developer.download.nvidia.com/compute/redist --upgrade nvidia-dali-cuda102
 WORKDIR /workspace
-CMD ["python", "run.py"]
+CMD ["python", "test.py"]
