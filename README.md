@@ -36,7 +36,11 @@ See if the container works properly.
 docker run --gpus all -v ./data/:/input_path --shm-size=2g -it zkxt21/zkxt:版本号 bash
 ```
 
-Then run the command python test.py
+Then run the command
+
+```
+python test.py
+```
 
 ## Train
 
