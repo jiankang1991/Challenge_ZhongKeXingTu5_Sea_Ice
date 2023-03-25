@@ -42,6 +42,8 @@ Then run the command
 python test.py
 ```
 
+The official version of CUDA is 10.0. If the local graphics card has high computing power, it is necessary to change the CUDA computing power version and dali version.
+
 ## Train
 
 We randomly split the provided images into the training and test sets with a ratio of 9: 1. For data augmentation, HorizoalFlip and RandomRotate90 are adopted and the images are normalized with the mean and standard deviation values of 127.5 and 31.875, respectively.
