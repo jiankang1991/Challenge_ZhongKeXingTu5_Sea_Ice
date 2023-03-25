@@ -53,7 +53,7 @@ We randomly split the provided images into the training and test sets with a rat
 
 For the binary segmentation task, commonly exploited losses in the literature are BCE, Dice, or their combinations. Compared to the pixel-based loss, i.e., BCE, Dice loss is more emphasized on learning precise region predictions. Most of the images in the training ground scene do not contain sea ice, causing the problem of gradients disappearing when dice are lost to the training network. We replace the last layer activated by the sigmoid function with the one activated by the softmax function and adopt the classwise Dice loss rather than the normal Dice loss for binary segmentation.
 
-注意训练时不要采用半精度训练，会影响梯度的传播。
+Pay attention not to use semi-precision training during training, which will affect the spread of gradient.
 
 - ### Model
 
