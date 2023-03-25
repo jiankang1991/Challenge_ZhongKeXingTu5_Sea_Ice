@@ -86,6 +86,8 @@ In order to achieve the purpose of improving the reasoning speed without signifi
 
 5、Torch.cuda.amp is used to automatically mix the precision in reasoning, which saves memory and speeds up reasoning.
 
+Evaluation metrics can be calculated based on the ipynb  and the path in the file needs to be changed.
+
 ## Citing this work
 
 ```html
