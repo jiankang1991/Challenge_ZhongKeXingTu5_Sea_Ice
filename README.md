@@ -1,4 +1,4 @@
-# Challenge_ZhongKeXingTu5_Sea_Ice
+# Second-place Solution for Sea Ice Segmentation in 2021 GaoFen Challenge
 
 This repository contains our code in the  Gaofen Challenge. The task of this challenge is to extract sea ice targets from a large range of sea areas in a fine pixel-by-pixel manner.
 
