@@ -15,7 +15,7 @@ from utils.losses import get_loss
 from utils.metrics import Evaluator, MetricTracker
 from utils.lr_scheduler import LR_Scheduler
 
-from utils.model import UnetAux_v2
+from model import UnetAux_v2
 
 class Trainer:
     """Object for training `solaris` models using PyTorch. """
