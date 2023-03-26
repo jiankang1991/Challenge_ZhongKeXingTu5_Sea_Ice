@@ -9,8 +9,6 @@ from tqdm import tqdm
 
 from tensorboardX import SummaryWriter
 import sys
-sys.path.append('../')
-from utils.models import  _load_model_weights_v2
 from utils.dataGen import make_data_generator
 from utils.losses import get_loss
 from utils.metrics import Evaluator, MetricTracker
