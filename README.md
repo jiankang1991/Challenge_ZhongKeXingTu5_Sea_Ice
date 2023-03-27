@@ -61,6 +61,12 @@ For the binary segmentation task, commonly exploited losses in the literature ar
 
 Pay attention not to use semi-precision training during training, which will affect the spread of gradient.
 
+Perform the training by running the following command
+
+```
+. run.sh
+```
+
 - ### Model
 
 <div align=center><img src="./data/model.png" width = "300" height = "300" ><img/></div>
