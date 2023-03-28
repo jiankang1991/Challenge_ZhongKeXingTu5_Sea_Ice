@@ -2,6 +2,8 @@
 
 This repository contains our code in the  Gaofen Challenge. The task of this challenge is to extract sea ice targets from a large range of sea areas in a fine pixel-by-pixel manner.
 
+News: https://mp.weixin.qq.com/s/NrWI8nsmhiD-4PJ0XzSE4g
+
 ## Dataset
 
 <div align=center>
