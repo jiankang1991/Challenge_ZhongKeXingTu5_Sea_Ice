@@ -37,6 +37,8 @@ trainData
 |  |--2.tif
 |   ......
 ```
+[downloadlink](https://drive.google.com/file/d/1XO7tBKiVHCrtpRMZ2yl9G9bxp1xearBE/view?usp=drive_link)
+
 
 ## Docker
 
